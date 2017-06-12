@@ -9,6 +9,7 @@ public class Demo1 {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.google.com");
+		driver.quit();
 	}
 
 }

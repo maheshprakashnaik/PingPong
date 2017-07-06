@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,7 +28,7 @@ public class Demo4 {
 		
 		driver.findElement(By.xpath("//span[contains(.,'Create Tasks')]")).click();
 		driver.findElement(By.xpath("(//button[contains(.,'set deadline')])[1]")).click();
-		String expectedMonth = "June 2017";
+		String expectedMonth = "June 2017`";
 		String monthName = driver.findElement(By.xpath("(//em[@unselectable='on'])[13]")).getText();
 		
 		System.out.println(monthName);
